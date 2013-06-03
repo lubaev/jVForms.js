@@ -700,7 +700,7 @@ jVForms.libClass = {
                 // Если точное совпадение, вытащим его.
                if (expression.test(classListArray[ i ])) {
                    
-                   return match ? classList.match(expression).pop() : true;
+                   return match ? classListArray[ i ].match(expression).pop() : true;
                    
                }
                 
